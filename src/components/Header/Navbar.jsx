@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Registration } from "./Registration";
-import jadoo from "../assets/Jadoo.svg";
+import { Registration } from "../Header/Registration";
+import jadoo from "../../assets/jadoo.svg";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {

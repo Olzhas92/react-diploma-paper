@@ -1,6 +1,10 @@
 import React from "react";
-import { Navbar } from "../components/Navbar";
+import { Hero } from "../components/Body/Hero";
 
 export const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };

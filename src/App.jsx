@@ -6,7 +6,7 @@ import { Hotels } from "./pages/Hotels";
 import { Flights } from "./pages/Flights";
 import { Bookings } from "./pages/Bookings";
 import { PageNotFound } from "./pages/PageNotFound";
-import { Layout } from "./components/Layout";
+import { Layout } from "./components/Layout/Layout";
 import styles from "./App.module.css";
 
 const App = () => {

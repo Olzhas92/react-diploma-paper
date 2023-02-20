@@ -1,0 +1,97 @@
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hero__text {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hero_text_h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.hero_text_title {
+  font-family: "Volkhov";
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero_text_paragraph {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hero_buttons_more {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  background-color: #f1a501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  margin-right: 44px;
+}
+
+.hero_buttons_demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.hero_buttons_demo_image {
+  width: 40%;
+  margin-top: 20px;
+}
+
+.hero_buttons_demo_button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #686d77;
+  border: none;
+  background-color: #fff1da;
+}
+
+.hero .hero__img {
+  width: 50%;
+}
