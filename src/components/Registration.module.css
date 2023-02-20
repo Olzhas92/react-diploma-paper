@@ -1,0 +1,27 @@
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 15%;
+}
+
+.login,
+.signup {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+
+.signup {
+  margin-left: 40px;
+  padding: 10px;
+  border: 1px #212832 solid;
+  border-radius: 5px;
+}

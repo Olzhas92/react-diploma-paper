@@ -1,16 +1,13 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
 export const Layout = () => {
   return (
     <div>
       <header>
-        <Link to="/">Home</Link>
-        <Link to="/destinations">Destinations</Link>
-        <Link to="/hotels">Hotels</Link>
-        <Link to="/flights">Flights</Link>
-        <Link to="/bookings">Bookings</Link>
+        <Navbar />
       </header>
       <main>
         <Outlet />

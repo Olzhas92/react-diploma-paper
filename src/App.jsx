@@ -7,10 +7,11 @@ import { Flights } from "./pages/Flights";
 import { Bookings } from "./pages/Bookings";
 import { PageNotFound } from "./pages/PageNotFound";
 import { Layout } from "./components/Layout";
+import styles from "./App.module.css";
 
 const App = () => {
   return (
-    <div>
+    <div className={styles.App}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />}></Route>
