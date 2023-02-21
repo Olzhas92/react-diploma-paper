@@ -6,6 +6,7 @@ import map from "../../../../assets/map.svg";
 import send from "../../../../assets/send.svg";
 import building from "../../../../assets/building.svg";
 import heart from "../../../../assets/heart.svg";
+import { SideCard } from "./SideCard";
 
 export const FeaturesCard = () => {
   return (
@@ -27,6 +28,7 @@ export const FeaturesCard = () => {
           <img src={heart} alt="" />
         </div>
       </div>
+      <SideCard />
     </div>
   );
 };
