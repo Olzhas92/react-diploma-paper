@@ -4,6 +4,7 @@ import { Categories } from "../components/Body/Categories/Categories";
 import { TopSelling } from "../components/Body/TopSelling/TopSelling";
 import { Features } from "../components/Body/Features/Features";
 import { Testimonials } from "../components/Body/Testimonials/Testimonials";
+import { Logos } from "../components/Body/Logos/Logos";
 
 export const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ export const HomePage = () => {
       <TopSelling />
       <Features />
       <Testimonials />
+      <Logos />
     </div>
   );
 };
