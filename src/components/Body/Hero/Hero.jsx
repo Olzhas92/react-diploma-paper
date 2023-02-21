@@ -1,6 +1,6 @@
 import React from "react";
-import traveller from "../../assets/traveller.svg";
-import play from "../../assets/play.svg";
+import traveller from "../../../assets/traveller.svg";
+import play from "../../../assets/play.svg";
 import styles from "./Hero.module.css";
 
 export const Hero = () => {
@@ -21,8 +21,10 @@ export const Hero = () => {
         <div className={styles.hero__buttons}>
           <button className={styles.hero_buttons_more}>Find out more</button>
           <div className={styles.hero_buttons_demo}>
-            <img src={play} alt="" className={styles.hero_buttons_demo_image}/>
-            <button className={styles.hero_buttons_demo_button}>Play Demo</button>
+            <img src={play} alt="" className={styles.hero_buttons_demo_image} />
+            <button className={styles.hero_buttons_demo_button}>
+              Play Demo
+            </button>
           </div>
         </div>
       </div>

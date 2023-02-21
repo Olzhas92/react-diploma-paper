@@ -1,0 +1,111 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.categories__paragraph {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5e6282;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.categories__title {
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #14183e;
+  margin: 0;
+}
+
+.categories__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 72px;
+}
+
+.weather,
+.flights,
+.events,
+.customization {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 22%;
+  padding: 12px;
+  transition: transform 1s linear;
+}
+
+.weather:hover,
+.flights:hover,
+.events:hover,
+.customization:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 36px;
+  transform: scale(1.2);
+}
+
+.events__image {
+  margin-top: 24px;
+}
+
+.customization__image {
+  margin-top: 40px;
+}
+
+.weather__text,
+.flights__text,
+.events__text,
+.customization__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.weather__title,
+.flights__title,
+.events__title,
+.customization__title {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1e1d4c;
+  margin: 12px 0;
+}
+
+.weather__paragraph,
+.flights__paragraph,
+.events__paragraph,
+.customization__paragraph {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5e6282;
+  margin-bottom: 0;
+}

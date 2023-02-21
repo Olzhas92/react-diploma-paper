@@ -1,6 +1,7 @@
 .App {
-  background-color: #fff1da;
-  padding: 0 150px;
   margin: 0 auto;
+  padding: 0 150px;
   box-sizing: border-box;
+  max-width: 1442px;
+  background-color: #fff1da;
 }

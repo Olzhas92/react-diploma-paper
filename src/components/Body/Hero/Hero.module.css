@@ -3,6 +3,7 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 106px;
 }
 
 .hero__text {
@@ -11,6 +12,7 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
+  width: 50%;
 }
 
 .hero_text_h2 {
@@ -92,6 +94,6 @@
   background-color: #fff1da;
 }
 
-.hero .hero__img {
+.hero__img {
   width: 50%;
 }
