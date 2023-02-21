@@ -10,17 +10,22 @@ import heart from "../../../../assets/heart.svg";
 export const FeaturesCard = () => {
   return (
     <div className={styles.features__card}>
-      <img src={card_image} alt="" />
-      <span>14-29 June | by Robbin Joseph</span>
-      <div>
-        <img src={leaf} alt="" />
-        <img src={map} alt="" />
-        <img src={send} alt="" />
-      </div>
-      <div>
-        <img src={building} alt="" />
-        <span>24 people going</span>
-        <img src={heart} alt="" />
+      <div className={styles.card}>
+        <img src={card_image} alt="" />
+        <p>Trip To Greece</p>
+        <span>14-29 June | by Robbin Joseph</span>
+        <div className={styles.card__icons}>
+          <img src={leaf} alt="" />
+          <img src={map} alt="" />
+          <img src={send} alt="" />
+        </div>
+        <div className={styles.card__stats}>
+          <div className={styles.card_stats_text}>
+            <img src={building} alt="" />
+            <span>24 people going</span>
+          </div>
+          <img src={heart} alt="" />
+        </div>
       </div>
     </div>
   );
