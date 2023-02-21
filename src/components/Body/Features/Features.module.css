@@ -4,3 +4,79 @@
   justify-content: space-between;
   flex-direction: row;
 }
+
+.features__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 48%;
+}
+
+.features_text_paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #5e6282;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.features_text_title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183e;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.destination,
+.payment,
+.airport {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.destination,
+.payment {
+  margin-bottom: 48px;
+}
+
+.destination img,
+.payment img,
+.airport img {
+  margin-right: 20px;
+}
+
+.destination__text span,
+.payment__text span,
+.airport__text span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+
+.destination__text p,
+.payment__text p,
+.airport__text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+  margin: 0;
+  margin-top: 4px;
+}
