@@ -3,5 +3,9 @@ import logos from "../../../assets/logos.svg";
 import styles from "./Logos.module.css";
 
 export const Logos = () => {
-  return <img src={logos} alt="" className={styles.logos} />;
+  return (
+    <div className={styles.logos}>
+      <img src={logos} alt="" />
+    </div>
+  );
 };

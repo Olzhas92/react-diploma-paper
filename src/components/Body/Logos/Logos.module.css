@@ -1,3 +1,6 @@
 .logos {
-  margin: 124px 0 148px;
+  margin-top: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

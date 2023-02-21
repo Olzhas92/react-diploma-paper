@@ -5,6 +5,7 @@ import { TopSelling } from "../components/Body/TopSelling/TopSelling";
 import { Features } from "../components/Body/Features/Features";
 import { Testimonials } from "../components/Body/Testimonials/Testimonials";
 import { Logos } from "../components/Body/Logos/Logos";
+import { Subscription } from "../components/Body/Subscription/Subscription";
 
 export const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ export const HomePage = () => {
       <Features />
       <Testimonials />
       <Logos />
+      <Subscription />
     </div>
   );
 };

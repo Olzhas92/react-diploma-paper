@@ -1,0 +1,66 @@
+.subscription {
+  background: #dfd7f9;
+  opacity: 0.7;
+  border-radius: 60px 20px 20px 20px;
+  z-index: 1;
+  margin-bottom: 190px;
+}
+
+.subscription__text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 54px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 74px;
+  z-index: 2;
+}
+
+.subscription_text_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.subscription_text_form input {
+  margin-right: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 200px 24px 68px;
+  border: none;
+}
+
+.subscription_text_form input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #39425d;
+}
+
+.subscription_text_form button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff7d68;
+  border-radius: 10px;
+  border: none;
+  padding: 22px 48px;
+}
+
+.subscription__image {
+  z-index: 2;
+  position: relative;
+  bottom: 360px;
+  left: 1070px;
+}
