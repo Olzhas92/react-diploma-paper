@@ -37,20 +37,27 @@
   flex-direction: row;
 }
 
-.rome {
+.rome,
+.london,
+.europe {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
+  transition: transform 1s linear;
 }
 
-.rome__image {
-  /* width: 314px; */
-  /* height: 300px; */
+.rome__image,
+.london__image,
+.europe__image {
+  width: 314px;
+  height: 300px;
 }
 
-.rome__destination {
+.rome__destination,
+.london__destination,
+.europe__destination {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +66,9 @@
   margin-bottom: 20px;
 }
 
-.rome__destination span {
+.rome__destination span,
+.london__destination span,
+.europe__destination span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -68,7 +77,9 @@
   color: #5e6282;
 }
 
-.rome__trip {
+.rome__trip,
+.london__trip,
+.europe__trip {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -76,15 +87,25 @@
   width: 100%;
 }
 
-.rome__trip img {
+.rome__trip img,
+.london__trip img,
+.europe__trip img {
   margin-right: 16px;
 }
 
-.rome__trip span {
+.rome__trip span,
+.london__trip span,
+.europe__trip span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 124.5%;
   color: #5e6282;
+}
+
+.rome:hover,
+.london:hover,
+.europe:hover {
+  transform: scale(1.2);
 }
