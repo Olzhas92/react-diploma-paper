@@ -5,3 +5,8 @@
   max-width: 1442px;
   background-color: #fff1da;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

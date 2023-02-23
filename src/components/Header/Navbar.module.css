@@ -4,6 +4,9 @@
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 28px;
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background-color: #fff1da;
 }
 
 .nav {

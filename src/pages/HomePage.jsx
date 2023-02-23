@@ -7,10 +7,11 @@ import { Testimonials } from "../components/Body/Testimonials/Testimonials";
 import { Logos } from "../components/Body/Logos/Logos";
 import { Subscription } from "../components/Body/Subscription/Subscription";
 import { Cookies } from "../components/Cookies/Cookies";
+import styles from "./HomePage.module.css"
 
 export const HomePage = () => {
   return (
-    <div>
+    <div className={styles.homepage}>
       <Hero />
       <Categories />
       <TopSelling />
