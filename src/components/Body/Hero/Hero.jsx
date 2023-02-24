@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { VideoModal } from "./VideoModal";
+import { InfoModal } from "./InfoModal";
 import traveller from "../../../assets/traveller.svg";
 import play from "../../../assets/play.svg";
 import styles from "./Hero.module.css";
@@ -7,7 +8,7 @@ import styles from "./Hero.module.css";
 export const Hero = () => {
   const [infoIsClicked, setInfoIsClicked] = useState(false);
   const [videoIsClicked, setVideoIsClicked] = useState(false);
-  
+
   return (
     <div className={styles.hero}>
       <div className={styles.hero__text}>
@@ -23,7 +24,12 @@ export const Hero = () => {
           the.
         </p>
         <div className={styles.hero__buttons}>
-          <button className={styles.hero_buttons_more}>Find out more</button>
+          <button
+            className={styles.hero_buttons_more}
+            onClick={() => setInfoIsClicked(true)}
+          >
+            Find out more
+          </button>
           <div className={styles.hero_buttons_demo}>
             <img
               src={play}
@@ -42,6 +48,9 @@ export const Hero = () => {
         <div className={styles.modals}>
           {videoIsClicked && (
             <VideoModal closeVideo={() => setVideoIsClicked(false)} />
+          )}
+          {infoIsClicked && (
+            <InfoModal closeInfo={() => setInfoIsClicked(false)} />
           )}
         </div>
       </div>
