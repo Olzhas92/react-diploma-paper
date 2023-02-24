@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { VideoModal } from "./VideoModal";
 import traveller from "../../../assets/traveller.svg";
 import play from "../../../assets/play.svg";
 import styles from "./Hero.module.css";
 
 export const Hero = () => {
+  const [infoIsClicked, setInfoIsClicked] = useState(false);
+  const [videoIsClicked, setVideoIsClicked] = useState(false);
+  
   return (
     <div className={styles.hero}>
       <div className={styles.hero__text}>
@@ -21,11 +25,24 @@ export const Hero = () => {
         <div className={styles.hero__buttons}>
           <button className={styles.hero_buttons_more}>Find out more</button>
           <div className={styles.hero_buttons_demo}>
-            <img src={play} alt="" className={styles.hero_buttons_demo_image} />
-            <button className={styles.hero_buttons_demo_button}>
+            <img
+              src={play}
+              alt=""
+              className={styles.hero_buttons_demo_image}
+              onClick={() => setVideoIsClicked(true)}
+            />
+            <button
+              className={styles.hero_buttons_demo_button}
+              onClick={() => setVideoIsClicked(true)}
+            >
               Play Demo
             </button>
           </div>
+        </div>
+        <div className={styles.modals}>
+          {videoIsClicked && (
+            <VideoModal closeVideo={() => setVideoIsClicked(false)} />
+          )}
         </div>
       </div>
       <img src={traveller} alt="" className={styles.hero__img} />
