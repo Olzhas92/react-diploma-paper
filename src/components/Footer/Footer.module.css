@@ -3,8 +3,8 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 100px;
-  padding-top: 40px;
+  padding-bottom: 60px !important;
+  padding-top: 40px !important;
   border-top: 1px solid black;
   margin: 0 -9999rem;
   padding: 0.25rem 9999rem;
@@ -96,5 +96,5 @@
 }
 
 .footer_social_stores img {
-  width: 48%;
+  width: 90%;
 }
