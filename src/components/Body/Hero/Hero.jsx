@@ -50,7 +50,14 @@ export const Hero = () => {
             <VideoModal closeVideo={() => setVideoIsClicked(false)} />
           )}
           {infoIsClicked && (
-            <InfoModal closeInfo={() => setInfoIsClicked(false)} />
+            <InfoModal closeInfo={() => setInfoIsClicked(false)}>
+              Jadoo is a popular online travel website that offers a wide range
+              of travel services, including flight bookings, hotel reservations,
+              and vacation packages. The website provides an easy-to-use
+              interface with customizable search filters, enabling users to find
+              and compare travel options at competitive prices. Additionally, it
+              offers customer support and a loyalty program.
+            </InfoModal>
           )}
         </div>
       </div>

@@ -16,7 +16,7 @@ export const VideoModal = (props) => {
       />
       <div className={styles.content}>
         <ReactPlayer
-          url={"https://www.youtube.com/watch?v=-SMKVJO_wGo&t=141s"}
+          url={"https://www.youtube.com/watch?v=Gb0TQ7VeApY&t=962s"}
         />
       </div>
     </div>,

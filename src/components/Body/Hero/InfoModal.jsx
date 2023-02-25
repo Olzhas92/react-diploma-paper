@@ -14,14 +14,7 @@ export const InfoModal = (props) => {
         onClick={props.closeInfo}
       />
       <div className={styles.info__content}>
-        <p className={styles.info_content_paragraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio
-          ratione! Minima quidem accusamus mollitia in sint corporis quaerat
-          impedit maiores natus eius, odit obcaecati sed laborum provident nemo
-          nam est. Temporibus magni qui deleniti exercitationem at autem nulla
-          illum omnis beatae? Iste quos recusandae inventore. Quisquam hic ipsa
-          voluptatem?
-        </p>
+        <p className={styles.info_content_paragraph}>{props.children}</p>
       </div>
     </div>,
     document.getElementById("info")
