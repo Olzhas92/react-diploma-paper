@@ -30,4 +30,5 @@
 .signup:hover {
   border-radius: 5px;
   box-shadow: 8px 4px 4px lightskyblue;
+  cursor: pointer;
 }

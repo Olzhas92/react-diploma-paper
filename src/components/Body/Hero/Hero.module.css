@@ -97,3 +97,29 @@
 .hero__img {
   width: 50%;
 }
+
+.hero_text_h2:hover,
+.hero_text_paragraph:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero_text_title:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.hero_buttons_more:hover {
+  box-shadow: 8px 8px gold;
+  cursor: pointer;
+}
+
+.hero_buttons_demo_image:hover,
+.hero_buttons_demo_button:hover {
+  cursor: pointer;
+}
+
+.hero_buttons_demo_button:hover {
+  box-shadow: 8px 8px lightcoral;
+}
