@@ -74,3 +74,12 @@
   color: #5e6282;
   margin: 0;
 }
+
+.testimonials__title:hover {
+  text-decoration: underline;
+}
+
+.testimonials__paragraph:hover {
+  box-shadow: 8px 8px 4px lightskyblue;
+  border-radius: 12px;
+}
