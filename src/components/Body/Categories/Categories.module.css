@@ -110,3 +110,12 @@
   color: #5e6282;
   margin-bottom: 0;
 }
+
+.categories__paragraph:hover {
+  text-decoration: underline;
+}
+
+.categories__title:hover {
+  box-shadow: 8px 8px 4px lightskyblue;
+  border-radius: 12px;
+}

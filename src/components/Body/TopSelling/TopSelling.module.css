@@ -110,3 +110,12 @@
 .europe:hover {
   transform: scale(1.2);
 }
+
+.topselling__paragraph:hover {
+  text-decoration: underline;
+}
+
+.topselling__title:hover {
+  box-shadow: 8px 8px 4px lightskyblue;
+  border-radius: 12px;
+}

@@ -101,7 +101,6 @@
 .hero_text_h2:hover,
 .hero_text_paragraph:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .hero_text_title:hover {
