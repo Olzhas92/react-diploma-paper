@@ -64,3 +64,11 @@
   bottom: 360px;
   left: 1070px;
 }
+
+.subscription__text p:hover {
+  text-decoration: underline;
+}
+
+.subscription_text_form button:hover {
+  cursor: pointer;
+}
