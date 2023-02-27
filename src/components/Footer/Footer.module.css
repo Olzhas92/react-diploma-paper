@@ -98,3 +98,18 @@
 .footer_social_stores img {
   width: 90%;
 }
+
+.footer_logo_link:hover,
+.footer__info p:hover {
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 8px 4px 4px lightskyblue;
+}
+
+.footer__logo p:hover {
+  text-decoration: underline;
+}
+
+.footer__social span:hover {
+  text-decoration: underline;
+}

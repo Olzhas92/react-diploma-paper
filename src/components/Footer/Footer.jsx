@@ -18,7 +18,7 @@ export const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footer__logo}>
-        <Link to="/" element={<HomePage />}>
+        <Link to="/" className={styles.footer_logo_link}>
           <img src={logo2} alt="" />
         </Link>
         <p>Book your trip in minute, get full pontrol for much longer.</p>
