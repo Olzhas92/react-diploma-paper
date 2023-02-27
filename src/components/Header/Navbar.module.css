@@ -9,6 +9,11 @@
   background-color: #fff1da;
 }
 
+.navbar__logo:hover {
+  border-radius: 12px;
+  box-shadow: 8px 4px 4px lightskyblue;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -27,4 +32,9 @@
   color: #212832;
   text-decoration: none;
   font-variant: small-caps;
+}
+
+.navlink:hover {
+  border-radius: 12px;
+  box-shadow: 8px 4px 4px lightskyblue;
 }

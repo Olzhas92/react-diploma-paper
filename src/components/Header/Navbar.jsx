@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css";
 export const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <Link to="/">
+      <Link to="/" className={styles.navbar__logo}>
         <img src={jadoo} alt="" />
       </Link>
       <nav className={styles.nav}>
