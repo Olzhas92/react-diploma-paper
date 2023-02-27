@@ -238,3 +238,18 @@
   color: #8a79df;
   margin-right: 6px;
 }
+
+.features_text_paragraph:hover {
+  text-decoration: underline;
+}
+
+.features_text_title:hover {
+  box-shadow: 8px 8px 4px lightskyblue;
+  border-radius: 12px;
+}
+
+.destination__text:hover,
+.payment__text:hover,
+.airport__text:hover {
+  text-decoration: underline;
+}

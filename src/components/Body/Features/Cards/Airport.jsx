@@ -7,7 +7,7 @@ export const Airport = () => {
     <div className={styles.airport}>
       <img src={airport} alt="" />
       <div className={styles.airport__text}>
-        <span>Choose Destination</span>
+        <span>Reach Airport on Selected Date</span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
           tempus.{" "}
