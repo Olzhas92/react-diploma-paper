@@ -1,4 +1,5 @@
-.login__modal {
+.login__modal,
+.signup__modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +10,8 @@
   left: 0;
 }
 
-.login__overlay {
+.login__overlay,
+.signup__overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.63);
@@ -22,7 +24,8 @@
   backdrop-filter: blur(2px);
 }
 
-.login__content {
+.login__content,
+.signup__content {
   z-index: 2;
   box-shadow: 0px 8px 16px rgba(39, 40, 51, 0.16);
   display: flex;
@@ -37,7 +40,8 @@
   border-radius: 50px;
 }
 
-.login__cancel {
+.login__cancel,
+.signup__cancel {
   position: relative;
   top: -220px;
   right: 0;
@@ -46,7 +50,13 @@
   z-index: 1;
 }
 
-.login_content_title {
+.login__cancel:hover,
+.signup__cancel:hover {
+  cursor: pointer;
+}
+
+.login_content_title,
+.signup_content_title {
   font-family: "Volkhov";
   font-size: 50px;
   font-weight: 700;
@@ -58,7 +68,8 @@
   margin-bottom: 20px;
 }
 
-.login__form {
+.login__form,
+.signup__form {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +78,9 @@
 }
 
 .login_form_email,
-.login_form_password {
+.login_form_password,
+.signup_form_email,
+.signup_form_password {
   padding: 16px 160px 16px 12px;
   margin-bottom: 20px;
   border-radius: 12px;
@@ -77,12 +90,15 @@
 }
 
 .login_form_email::placeholder,
-.login_form_password::placeholder {
+.login_form_password::placeholder,
+.signup_form_email::placeholder,
+.signup_form_password::placeholder {
   font-family: "Volkhov";
   font-size: 18px;
 }
 
-.login_form_button {
+.login_form_button,
+.signup_form_button {
   width: 50%;
   padding: 16px 24px;
   border-radius: 12px;
@@ -93,12 +109,14 @@
   font-size: 20px;
 }
 
-.login_content_title:hover {
+.login_content_title:hover,
+.signup_content_title:hover {
   box-shadow: 8px 8px 4px lightskyblue;
   border-radius: 20px;
 }
 
-.login_form_button:hover {
+.login_form_button:hover,
+.signup_form_button:hover {
   cursor: pointer;
   box-shadow: 8px 8px 4px lightcoral;
 }
