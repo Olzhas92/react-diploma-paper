@@ -26,7 +26,6 @@ export const LoginModal = (props) => {
             placeholder="Password"
             className={styles.login_form_password}
           />
-          <input type="checkbox" />
           <button type="submit" className={styles.login_form_button}>
             Login
           </button>

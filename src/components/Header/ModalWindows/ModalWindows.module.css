@@ -39,7 +39,7 @@
 
 .login__cancel {
   position: relative;
-  top: -160px;
+  top: -220px;
   right: 0;
   bottom: 0;
   left: 530px;
@@ -68,17 +68,29 @@
 
 .login_form_email,
 .login_form_password {
-  padding: 12px 160px 12px 12px;
+  padding: 16px 160px 16px 12px;
   margin-bottom: 20px;
+  border-radius: 12px;
+  border: none;
+  font-family: "Volkhov";
+  font-size: 18px;
+}
+
+.login_form_email::placeholder,
+.login_form_password::placeholder {
+  font-family: "Volkhov";
+  font-size: 18px;
 }
 
 .login_form_button {
-  width: 30%;
-  padding: 8px 24px;
+  width: 50%;
+  padding: 16px 24px;
   border-radius: 12px;
   border: none;
   background-color: lightskyblue;
   margin-top: 20px;
+  font-family: "Volkhov";
+  font-size: 20px;
 }
 
 .login_content_title:hover {
