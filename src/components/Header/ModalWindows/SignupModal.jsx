@@ -26,6 +26,15 @@ export const SignupModal = (props) => {
             placeholder="Password"
             className={styles.signup_form_password}
           />
+          <div className={styles.signup_form_checkbox}>
+            <input type="checkbox" id="checkbox" />
+            <label id="checkbox">
+              I agree with{" "}
+              <a href="https://www.sports.ru/" target="_blank">
+                the Rules
+              </a>
+            </label>
+          </div>
           <button type="submit" className={styles.signup_form_button}>
             Sign Up
           </button>

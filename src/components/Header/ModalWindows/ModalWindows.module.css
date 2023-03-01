@@ -89,6 +89,11 @@
   font-size: 18px;
 }
 
+.signup_form_checkbox {
+  font-family: "Volkhov";
+  font-size: 18px;
+}
+
 .login_form_email::placeholder,
 .login_form_password::placeholder,
 .signup_form_email::placeholder,
