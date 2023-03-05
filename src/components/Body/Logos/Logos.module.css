@@ -17,3 +17,9 @@
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .logos {
+    margin-top: 100px;
+  }
+}

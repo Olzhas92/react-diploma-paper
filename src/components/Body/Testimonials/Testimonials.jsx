@@ -66,6 +66,17 @@ export const Testimonials = () => {
             dotColorInActive: "white",
             dotColorActive: "#068CCF",
           },
+          {
+            breakpoint: 768,
+            cols: 1,
+            rows: 1,
+            gap: 1,
+            loop: true,
+            autoplay: 5000,
+            hideArrow: true,
+            dotColorInActive: "white",
+            dotColorActive: "#068CCF",
+          },
         ]}
       >
         {arr.map((item) => (
