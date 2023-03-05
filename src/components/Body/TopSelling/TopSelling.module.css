@@ -142,3 +142,74 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 1024px) {
+  .topselling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 140px;
+  }
+
+  .topselling__title {
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183e;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .topselling__cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    height: 400px;
+  }
+
+  .rome,
+  .london,
+  .europe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25%;
+    transition: transform 1s linear;
+  }
+
+  .rome,
+  .london {
+    margin-right: 40px;
+  }
+
+  .rome__destination,
+  .london__destination,
+  .europe__destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .rome__trip img,
+  .london__trip img,
+  .europe__trip img {
+    margin-right: 16px;
+    margin-left: 20px;
+  }
+
+  .rome:hover,
+  .london:hover,
+  .europe:hover {
+    transform: scale(1);
+  }
+}
