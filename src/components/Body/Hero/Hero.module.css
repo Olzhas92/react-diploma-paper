@@ -122,3 +122,10 @@
 .hero_buttons_demo_button:hover {
   box-shadow: 8px 8px lightcoral;
 }
+
+@media (max-width: 1200px) {
+  .hero__img {
+    width: 50%;
+    margin-top: 120px;
+  }
+}
