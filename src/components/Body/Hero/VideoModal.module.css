@@ -38,3 +38,25 @@
   left: 680px;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .content {
+    z-index: 2;
+    box-shadow: 0px 8px 16px rgba(39, 40, 51, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    right: 20px;
+  }
+
+  .cancel {
+    position: relative;
+    top: -204px;
+    right: 0;
+    bottom: 0;
+    left: 620px;
+    z-index: 1;
+  }
+}
