@@ -101,3 +101,12 @@
     color: #5e6282;
   }
 }
+
+@media (max-width: 1024px) {
+  .carousel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
