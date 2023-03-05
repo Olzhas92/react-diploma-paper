@@ -19,3 +19,12 @@ body {
     background-color: #fff1da;
   }
 }
+
+@media (max-width: 1024px) {
+  .App {
+    margin: 0 auto;
+    padding: 0 80px;
+    box-sizing: border-box;
+    background-color: #fff1da;
+  }
+}

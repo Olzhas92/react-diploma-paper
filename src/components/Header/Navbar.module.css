@@ -38,3 +38,25 @@
   border-radius: 12px;
   box-shadow: 8px 4px 4px lightskyblue;
 }
+
+@media (max-width: 1024px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+  }
+
+  .navlink {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212832;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+}

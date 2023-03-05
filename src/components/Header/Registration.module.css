@@ -32,3 +32,13 @@
   box-shadow: 8px 4px 4px lightskyblue;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 24%;
+  }
+}
