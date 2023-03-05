@@ -81,3 +81,12 @@
     left: 896px;
   }
 }
+
+@media (max-width: 1024px) {
+  .subscription__image {
+    z-index: 2;
+    position: relative;
+    bottom: 340px;
+    left: 780px;
+  }
+}
