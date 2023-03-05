@@ -60,3 +60,13 @@
     font-variant: small-caps;
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 44%;
+  }
+}

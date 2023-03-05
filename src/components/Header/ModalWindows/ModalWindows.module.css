@@ -33,7 +33,6 @@
   justify-content: center;
   flex-direction: column;
   width: 500px;
-  /* height: 600px; */
   padding-top: 80px;
   padding-bottom: 60px;
   background-color: #fff1da;
@@ -124,4 +123,34 @@
 .signup_form_button:hover {
   cursor: pointer;
   box-shadow: 8px 8px 4px lightcoral;
+}
+
+@media (max-width: 768px) {
+  .login__content,
+  .signup__content {
+    z-index: 2;
+    box-shadow: 0px 8px 16px rgba(39, 40, 51, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #fff1da;
+    border-radius: 50px;
+    position: relative;
+    right: 24px;
+    top: 0;
+  }
+
+  .login__cancel,
+  .signup__cancel {
+    position: relative;
+    top: -220px;
+    right: 0;
+    bottom: 0;
+    left: 500px;
+    z-index: 1;
+  }
 }

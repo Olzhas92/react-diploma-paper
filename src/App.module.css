@@ -28,3 +28,12 @@ body {
     background-color: #fff1da;
   }
 }
+
+@media (max-width: 768px) {
+  .App {
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    background-color: #fff1da;
+  }
+}
