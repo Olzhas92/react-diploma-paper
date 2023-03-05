@@ -119,3 +119,13 @@
   box-shadow: 8px 8px 4px lightskyblue;
   border-radius: 12px;
 }
+
+@media (max-width: 768px) {
+  .categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+}

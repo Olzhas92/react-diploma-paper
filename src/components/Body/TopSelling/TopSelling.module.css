@@ -213,3 +213,49 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  .topselling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+
+  .topselling__title {
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183e;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+
+  .topselling__cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 400px;
+    width: 90%;
+  }
+
+  .rome__destination,
+  .london__destination,
+  .europe__destination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .rome,
+  .london {
+    margin-right: 0;
+  }
+}
