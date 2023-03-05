@@ -43,6 +43,19 @@ export const Testimonials = () => {
         hideArrow={true}
         dotColorInactive="white"
         dotColorActive="#068CCF"
+        responsiveLayout={[
+          {
+            breakpoint: 1200,
+            cols: 3,
+            rows: 1,
+            gap: 1,
+            loop: true,
+            autoplay: 5000,
+            hideArrow: true,
+            dotColorInActive: "white",
+            dotColorActive: "#068CCF",
+          },
+        ]}
       >
         {arr.map((item) => (
           <Carousel.Item>

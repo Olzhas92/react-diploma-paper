@@ -83,3 +83,21 @@
   box-shadow: 8px 8px 4px lightskyblue;
   border-radius: 12px;
 }
+
+@media (max-width: 1200px) {
+  .carousel {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel_text_paragraph {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5e6282;
+  }
+}

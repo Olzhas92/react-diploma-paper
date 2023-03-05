@@ -10,3 +10,12 @@ html,
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 1200px) {
+  .App {
+    margin: 0 auto;
+    padding: 0 110px;
+    box-sizing: border-box;
+    background-color: #fff1da;
+  }
+}
