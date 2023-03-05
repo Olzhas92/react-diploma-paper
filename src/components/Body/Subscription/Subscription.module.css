@@ -72,3 +72,12 @@
 .subscription_text_form button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+  .subscription__image {
+    z-index: 2;
+    position: relative;
+    bottom: 340px;
+    left: 896px;
+  }
+}

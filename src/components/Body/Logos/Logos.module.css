@@ -4,3 +4,16 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 1200px) {
+  .logos {
+    margin-top: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logos img {
+    width: 90%;
+  }
+}

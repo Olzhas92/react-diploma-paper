@@ -134,3 +134,11 @@
   font-size: 18px;
   box-shadow: 8px 8px 4px lightcoral;
 }
+
+@media (max-width: 1200px) {
+  .rome:hover,
+  .london:hover,
+  .europe:hover {
+    transform: scale(1.1);
+  }
+}
