@@ -55,6 +55,10 @@
   box-shadow: 8px 4px 4px lightskyblue;
 }
 
+.burger {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .nav {
     display: flex;
@@ -84,5 +88,98 @@
     justify-content: space-between;
     flex-direction: row;
     width: 44%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    border-bottom: 1px black solid;
+  }
+  .navbar_logo_title {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212832;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .navlink {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212832;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    right: 50px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .dropdown__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dropdown_nav_link {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212832;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+
+  .dropdown__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dropdown__login,
+  .dropdown__signup {
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212832;
+    text-decoration: none;
+    font-variant: small-caps;
   }
 }
