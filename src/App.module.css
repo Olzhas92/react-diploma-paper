@@ -37,3 +37,12 @@ body {
     background-color: #fff1da;
   }
 }
+
+@media (max-width: 480px) {
+  .App {
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background-color: #fff1da;
+  }
+}
