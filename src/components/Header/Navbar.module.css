@@ -9,9 +9,25 @@
   background-color: #fff1da;
 }
 
+.navbar__logo {
+  text-decoration: none;
+}
+
 .navbar__logo:hover {
   border-radius: 12px;
   box-shadow: 8px 4px 4px lightskyblue;
+}
+
+.navbar_logo_title {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212832;
+  text-decoration: none;
+  font-variant: small-caps;
 }
 
 .nav {
