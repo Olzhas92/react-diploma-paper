@@ -129,3 +129,21 @@
     margin-bottom: 120px;
   }
 }
+
+@media (max-width: 480px) {
+  .categories__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .weather,
+  .flights,
+  .events,
+  .customization {
+    width: 50%;
+    margin: 16px 0;
+  }
+}

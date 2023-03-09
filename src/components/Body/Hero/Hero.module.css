@@ -251,3 +251,17 @@
     background-color: #fff1da;
   }
 }
+
+@media (max-width: 480px) {
+  .hero__img {
+    display: none;
+  }
+
+  .hero__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+}
