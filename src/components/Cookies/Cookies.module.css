@@ -108,6 +108,43 @@
   }
 }
 
+@media (max-width: 480px) {
+  .cookies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #474a57;
+    box-shadow: 0px 8px 16px rgba(39, 40, 51, 0.16);
+    border-radius: 6px;
+    position: fixed;
+    width: 300px;
+    left: 0px;
+    top: 1050px;
+    margin: 0 16px;
+  }
+
+  .text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    font-feature-settings: "salt" on, "liga" off;
+    color: #f7f8f9;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 360px) {
   .cookies {
     display: flex;
