@@ -156,3 +156,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 360px) {
+  .subscription_text_form input {
+    width: 16%;
+  }
+}
