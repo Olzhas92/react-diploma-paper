@@ -34,7 +34,8 @@ export const Testimonials = () => {
       <p className={styles.testimonials__paragraph}>
         What people say about Us.
       </p>
-      <Carousel
+      <div>
+        <Carousel
         cols={3}
         rows={1}
         gap={10}
@@ -77,6 +78,17 @@ export const Testimonials = () => {
             dotColorInActive: "white",
             dotColorActive: "#068CCF",
           },
+          {
+            breakpoint: 480,
+            cols: 1,
+            rows: 1,
+            gap: 1,
+            loop: true,
+            autoplay: 5000,
+            hideArrow: true,
+            dotColorInActive: "white",
+            dotColorActive: "#068CCF",
+          },
         ]}
       >
         {arr.map((item) => (
@@ -88,6 +100,7 @@ export const Testimonials = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+      </div>
     </div>
   );
 };
