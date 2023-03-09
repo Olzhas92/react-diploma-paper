@@ -36,70 +36,70 @@ export const Testimonials = () => {
       </p>
       <div>
         <Carousel
-        cols={3}
-        rows={1}
-        gap={10}
-        loop={true}
-        autoplay={5000}
-        hideArrow={true}
-        dotColorInactive="white"
-        dotColorActive="#068CCF"
-        responsiveLayout={[
-          {
-            breakpoint: 1200,
-            cols: 3,
-            rows: 1,
-            gap: 1,
-            loop: true,
-            autoplay: 5000,
-            hideArrow: true,
-            dotColorInActive: "white",
-            dotColorActive: "#068CCF",
-          },
-          {
-            breakpoint: 1024,
-            cols: 2,
-            rows: 1,
-            gap: 1,
-            loop: true,
-            autoplay: 5000,
-            hideArrow: true,
-            dotColorInActive: "white",
-            dotColorActive: "#068CCF",
-          },
-          {
-            breakpoint: 768,
-            cols: 1,
-            rows: 1,
-            gap: 1,
-            loop: true,
-            autoplay: 5000,
-            hideArrow: true,
-            dotColorInActive: "white",
-            dotColorActive: "#068CCF",
-          },
-          {
-            breakpoint: 480,
-            cols: 1,
-            rows: 1,
-            gap: 1,
-            loop: true,
-            autoplay: 5000,
-            hideArrow: true,
-            dotColorInActive: "white",
-            dotColorActive: "#068CCF",
-          },
-        ]}
-      >
-        {arr.map((item) => (
-          <Carousel.Item>
-            <CarouselCard key={item.id}>
-              <p className={styles.testimonials__name}>{item.name}</p>
-              <p className={styles.testimonials__location}>{item.location}</p>
-            </CarouselCard>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+          cols={3}
+          rows={1}
+          gap={10}
+          loop={true}
+          autoplay={5000}
+          hideArrow={true}
+          dotColorInactive="white"
+          dotColorActive="#068CCF"
+          responsiveLayout={[
+            {
+              breakpoint: 1200,
+              cols: 3,
+              rows: 1,
+              gap: 1,
+              loop: true,
+              autoplay: 5000,
+              hideArrow: true,
+              dotColorInActive: "white",
+              dotColorActive: "#068CCF",
+            },
+            {
+              breakpoint: 1024,
+              cols: 2,
+              rows: 1,
+              gap: 1,
+              loop: true,
+              autoplay: 5000,
+              hideArrow: true,
+              dotColorInActive: "white",
+              dotColorActive: "#068CCF",
+            },
+            {
+              breakpoint: 768,
+              cols: 1,
+              rows: 1,
+              gap: 1,
+              loop: true,
+              autoplay: 5000,
+              hideArrow: true,
+              dotColorInActive: "white",
+              dotColorActive: "#068CCF",
+            },
+            {
+              breakpoint: 480,
+              cols: 1,
+              rows: 1,
+              gap: 1,
+              loop: true,
+              autoplay: 5000,
+              hideArrow: true,
+              dotColorInActive: "white",
+              dotColorActive: "#068CCF",
+            },
+          ]}
+        >
+          {arr.map((item) => (
+            <Carousel.Item key={item.id}>
+              <CarouselCard>
+                <p className={styles.testimonials__name}>{item.name}</p>
+                <p className={styles.testimonials__location}>{item.location}</p>
+              </CarouselCard>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
