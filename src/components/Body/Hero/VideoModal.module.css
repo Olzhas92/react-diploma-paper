@@ -60,3 +60,18 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 480px) {
+  .content {
+    width: 80%;
+  }
+
+  .cancel {
+    position: relative;
+    top: -175px;
+    right: 0;
+    bottom: 0;
+    left: 395px;
+    z-index: 1;
+  }
+}
