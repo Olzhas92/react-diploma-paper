@@ -411,3 +411,28 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .features {
+    margin-top: 800px;
+    display: flex;
+    align-items: center;
+  }
+
+  .features__text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .features_text_title {
+    text-align: center;
+  }
+
+  .card,
+  .features__card {
+    display: none;
+  }
+}

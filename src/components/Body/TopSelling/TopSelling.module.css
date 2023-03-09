@@ -259,3 +259,20 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .topselling__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 200px;
+  }
+
+  .rome,
+  .london,
+  .europe {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
