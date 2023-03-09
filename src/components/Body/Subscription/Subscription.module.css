@@ -135,6 +135,10 @@
 }
 
 @media (max-width: 480px) {
+  .subscription {
+    margin-bottom: 80px;
+  }
+
   .subscription_text_form {
     display: flex;
     align-items: center;
