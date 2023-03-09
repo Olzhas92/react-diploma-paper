@@ -133,3 +133,22 @@
     padding: 21px 40px;
   }
 }
+
+@media (max-width: 480px) {
+  .subscription_text_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .subscription__text p {
+    padding: 60px 0 30px;
+  }
+
+  .subscription_text_form input {
+    margin: 0;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
