@@ -75,3 +75,14 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 360px) {
+  .cancel {
+    position: relative;
+    top: -200px;
+    right: 0;
+    bottom: 0;
+    left: 268px;
+    z-index: 1;
+  }
+}

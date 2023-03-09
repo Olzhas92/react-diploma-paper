@@ -110,3 +110,14 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 360px) {
+  .info__cancel {
+    position: relative;
+    top: -205px;
+    right: 0;
+    bottom: 0;
+    left: 316px;
+    z-index: 1;
+  }
+}
