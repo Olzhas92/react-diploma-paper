@@ -2,7 +2,7 @@ import React from "react";
 import { Hotel } from "./Hotel";
 import styles from "./HotelsBody.module.css";
 
-const myDestinations = [
+const myHotels = [
   { id: 1, name: "Marriot", price: 1000 },
   {
     id: 2,
@@ -34,16 +34,11 @@ const myDestinations = [
   },
 ];
 
-export const HotelsBody = (props) => {
+export const HotelsBody = () => {
   return (
     <div className={styles.destinations__body}>
-      {myDestinations.map((item) => (
-        <Hotel
-          key={item.id}
-          name={item.name}
-          price={item.price}
-          isBooked={item.isBooked}
-        />
+      {myHotels.map((item) => (
+        <Hotel key={item.id} name={item.name} price={item.price} />
       ))}
     </div>
   );

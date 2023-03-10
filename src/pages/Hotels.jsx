@@ -4,7 +4,7 @@ import styles from "./Hotels.module.css";
 
 export const Hotels = () => {
   return (
-    <div className={styles.destinations}>
+    <div className={styles.hotels}>
       <HotelsBody />
     </div>
   );
