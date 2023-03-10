@@ -2,5 +2,81 @@
   margin: 0 -9999rem;
   padding: 0.25rem 9999rem;
   background-color: #fff1da;
-  height: 100vh;
+  padding-top: 100px;
+}
+
+.bookings__hotels,
+.bookings__flights {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.bookings__hotels img,
+.bookings__flights img {
+  width: 20%;
+}
+
+.bookings__hotels p,
+.bookings__flights p {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  margin-bottom: 60px;
+}
+
+.total__price {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .bookings__hotels,
+  .bookings__flights {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px black solid;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookings__hotels p,
+  .bookings__flights p {
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: lightcoral;
+  }
+
+  .total__price {
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: lightcoral;
+    margin-bottom: 60px;
+  }
 }
