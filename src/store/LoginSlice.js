@@ -4,16 +4,18 @@ const loginSlice = createSlice({
   name: "Login",
   initialState: {
     loginArr: [],
+    isLoggedIn: false,
   },
   reducers: {
     addLogin(state, action) {
       const newLogin = {
         id: Math.random(),
-        name: action.payload.name,
+        email: action.payload.email,
         password: action.payload.password,
       };
       console.log(newLogin);
-      state.loginArr.push(newLogin);
+      state.isLoggedIn = true;
+      state.loginArr = [...state.loginArr, newLogin];
       console.log(state.loginArr);
     },
     deleteLogin(state, action) {

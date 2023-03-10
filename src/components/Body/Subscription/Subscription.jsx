@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import subscription_image from "../../../assets/subscription_image.svg";
+import { useDispatch } from "react-redux";
 import { addSubscription } from "../../../store/SubscriptionSlice";
 import styles from "./Subscription.module.css";
 
@@ -47,11 +46,6 @@ export const Subscription = () => {
         {isComplete && <p>You have successfully subscribed!</p>}
         {!isComplete && <p>Please, fill in the form</p>}
       </div>
-      <img
-        src={subscription_image}
-        alt=""
-        className={styles.subscription__image}
-      />
     </div>
   );
 };

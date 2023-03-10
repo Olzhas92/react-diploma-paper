@@ -125,6 +125,18 @@
   box-shadow: 8px 8px 4px lightcoral;
 }
 
+.alert__paragraph {
+  font-family: "Volkhov";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #14183e;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .login__content,
   .signup__content {
