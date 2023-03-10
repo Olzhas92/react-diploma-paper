@@ -1,7 +1,6 @@
 import React from "react";
-import hotelImg from "../../assets/hotel.svg";
 import { Hotel } from "./Hotel";
-import styles from "./DestinationsBody.module.css";
+import styles from "./HotelsBody.module.css";
 
 const myDestinations = [
   { id: 1, name: "Marriot", price: 1000 },
@@ -35,7 +34,7 @@ const myDestinations = [
   },
 ];
 
-export const DestinationsBody = (props) => {
+export const HotelsBody = (props) => {
   return (
     <div className={styles.destinations__body}>
       {myDestinations.map((item) => (

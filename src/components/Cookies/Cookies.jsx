@@ -24,7 +24,6 @@ export const Cookies = () => {
             полезным для Вас.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.information}>Подробнее</button>
             <button className={styles.accept} onClick={clickHandler}>
               Принять
             </button>

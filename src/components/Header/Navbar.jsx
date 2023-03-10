@@ -12,11 +12,11 @@ export const Navbar = () => {
         <h2 className={styles.navbar_logo_title}>Olzhas & Co.</h2>
       </Link>
       <nav className={styles.nav}>
-        <Link to="/destinations" className={styles.navlink}>
-          Destinations
-        </Link>
         <Link to="/hotels" className={styles.navlink}>
           Hotels
+        </Link>
+        <Link to="/flights" className={styles.navlink}>
+          Flights
         </Link>
         <Link to="/bookings" className={styles.navlink}>
           Bookings
@@ -32,11 +32,11 @@ export const Navbar = () => {
       {burgerIsClicked && (
         <div className={styles.dropdown}>
           <nav className={styles.dropdown__nav}>
-            <Link to="/destinations" className={styles.dropdown_nav_link}>
-              Destinations
-            </Link>
             <Link to="/hotels" className={styles.dropdown_nav_link}>
               Hotels
+            </Link>
+            <Link to="/flights" className={styles.dropdown_nav_link}>
+              Flights
             </Link>
             <Link to="/bookings" className={styles.dropdown_nav_link}>
               Bookings
