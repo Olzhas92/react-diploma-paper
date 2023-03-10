@@ -7,10 +7,11 @@ export const Hotel = (props) => {
 
   return (
     <div className={styles.hotel}>
+      
       <img src={ritz} alt="hotel" />
       <div className={styles.hotel__details}>
         <h4>{name}</h4>
-        <p>{price}</p>
+        <p>$ {price}</p>
         <p>{city}</p>
       </div>
     </div>

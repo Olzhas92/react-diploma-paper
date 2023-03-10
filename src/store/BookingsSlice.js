@@ -4,19 +4,19 @@ const bookingsSlice = createSlice({
   name: "Bookings",
   initialState: {
     bookingsArr: [],
+    totalPrice: 0,
   },
   reducers: {
     addHotel(state, action) {
-      //   const newHotelBooking = {
-      //     id: action.payload.id,
-      //     img: action.payload.img,
-      //     destination: action.payload.destination,
-      //     price: action.payload.price,
-      //   };
-      //   console.log(newHotelBooking);
-      state.bookingsArr.push(action.payload);
+      const newHotelRequest = {
+        id: Math.random(),
+        hotel: action.payload.hotel,
+        price: action.payload.price,
+        city: action.payload.city,
+      };
+      console.log(newHotelRequest);
+      state.bookingsArr = [...state.bookingsArr, newHotelRequest];
       console.log(state.bookingsArr);
-      state.bookingsArr = [...state.bookingsArr, action.payload];
     },
     addFlight(state, action) {},
   },

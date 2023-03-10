@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Flight } from "./Flight";
 import styles from "./FlightsBody.module.css";
 
@@ -35,8 +35,32 @@ const myFlights = [
 ];
 
 export const FlightsBody = () => {
+  const [newPrice, setNewPrice] = useState(0);
+  const [newCity, setNewCity] = useState("");
   return (
     <div className={styles.destinations__body}>
+      <h3>Please fill in this form and we'll search this hotel</h3>
+      <form onSubmit={submitHandler} className={styles.destinations_body_form}>
+        <input
+          type="text"
+          placeholder="Hotel"
+          value={newHotel}
+          onChange={(e) => setNewHotel(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Price"
+          value={newPrice}
+          onChange={(e) => setNewPrice(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="City"
+          value={newCity}
+          onChange={(e) => setNewCity(e.target.value)}
+        />
+        <button type="submit">Search</button>
+      </form>
       {myFlights.map((item) => (
         <Flight key={item.id} name={item.name} price={item.price} />
       ))}

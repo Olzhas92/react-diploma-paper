@@ -4,3 +4,93 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.destinations__body h3 {
+  border: none;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  font-variant: small-caps;
+}
+
+.destinations_body_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.destinations_body_form input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+}
+
+.destinations_body_form input::placeholder {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+}
+
+.destinations_body_form button {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  width: 100%;
+  cursor: pointer;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
+.destinations__body h2 {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: blueviolet;
+  margin-bottom: 60px;
+}
+
+.incomplete__form {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  margin-bottom: 60px;
+}
