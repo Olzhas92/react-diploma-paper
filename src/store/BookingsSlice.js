@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const bookingsSlice = createSlice({
   name: "Bookings",
   initialState: {
-    bookingsArr: [],
+    hotelsArr: [],
+    flightsArr: [],
     totalPrice: 0,
   },
   reducers: {
@@ -15,10 +16,19 @@ const bookingsSlice = createSlice({
         city: action.payload.city,
       };
       console.log(newHotelRequest);
-      state.bookingsArr = [...state.bookingsArr, newHotelRequest];
-      console.log(state.bookingsArr);
+      state.hotelsArr = [...state.hotelsArr, newHotelRequest];
+      console.log(state.hotelsArr);
     },
-    addFlight(state, action) {},
+    addFlight(state, action) {
+      const newFlightRequest = {
+        id: Math.random(),
+        price: action.payload.price,
+        city: action.payload.city,
+      };
+      console.log(newFlightRequest);
+      state.flightsArr = [...state.flightsArr, newFlightRequest];
+      console.log(state.flightsArr);
+    },
   },
 });
 

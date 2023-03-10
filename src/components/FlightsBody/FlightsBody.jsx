@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addFlight } from "../../store/BookingsSlice";
 import { Flight } from "./Flight";
 import styles from "./FlightsBody.module.css";
 
@@ -35,18 +37,30 @@ const myFlights = [
 ];
 
 export const FlightsBody = () => {
-  const [newPrice, setNewPrice] = useState(0);
   const [newCity, setNewCity] = useState("");
+  const [newPrice, setNewPrice] = useState(0);
+
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setIsCompleted(false);
+    if (newPrice > 0 && newCity.trim().length > 0) {
+      setIsCompleted(true);
+      dispatch(addFlight({ city: newCity, price: newPrice }));
+      setNewPrice(0);
+      setNewCity("");
+    } else {
+      setIsCompleted(false);
+    }
+  };
+
   return (
-    <div className={styles.destinations__body}>
-      <h3>Please fill in this form and we'll search this hotel</h3>
-      <form onSubmit={submitHandler} className={styles.destinations_body_form}>
-        <input
-          type="text"
-          placeholder="Hotel"
-          value={newHotel}
-          onChange={(e) => setNewHotel(e.target.value)}
-        />
+    <div className={styles.flights__body}>
+      <h3>Please fill in this form and we'll search this flight</h3>
+      <form onSubmit={submitHandler} className={styles.flights_body_form}>
         <input
           type="number"
           placeholder="Price"
