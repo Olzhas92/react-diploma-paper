@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ritz from "../../assets/ritz.jpg";
 import styles from "./Hotel.module.css";
 
 export const Hotel = (props) => {
-  const [hotelIsBooked, setHotelIsBooked] = useState(false);
-  const { name, price } = props;
+  const { name, price, city } = props;
 
   return (
     <div className={styles.hotel}>
@@ -12,14 +11,7 @@ export const Hotel = (props) => {
       <div className={styles.hotel__details}>
         <h4>{name}</h4>
         <p>{price}</p>
-        <button
-          onClick={() => {
-            setHotelIsBooked(true);
-            console.log(`hotel is booked = ${hotelIsBooked} `);
-          }}
-        >
-          Book a Hotel
-        </button>
+        <p>{city}</p>
       </div>
     </div>
   );

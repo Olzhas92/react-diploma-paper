@@ -3,34 +3,39 @@ import { Hotel } from "./Hotel";
 import styles from "./HotelsBody.module.css";
 
 const myHotels = [
-  { id: 1, name: "Marriot", price: 1000 },
+  { id: 1, name: "Marriot", price: 1000, city: "Astana" },
   {
     id: 2,
     name: "Ritz-Carlton",
     price: 2000,
+    city: "Almaty",
   },
-  { id: 3, name: "Hilton", price: 3000 },
-  { id: 4, name: "Rixos", price: 4000 },
+  { id: 3, name: "Hilton", price: 3000, city: "Kokshetau" },
+  { id: 4, name: "Rixos", price: 4000, city: "Astana" },
   {
     id: 5,
     name: "Rixos Burabay",
     price: 5000,
+    city: "Almaty",
   },
   {
     id: 6,
     name: "Rixos Aktau",
     price: 6000,
+    city: "Kokshetau",
   },
   {
     id: 7,
     name: "Kazakhstan",
     price: 7000,
+    city: "Astana",
   },
-  { id: 8, name: "CR7", price: 8000 },
+  { id: 8, name: "CR7", price: 8000, city: "Almaty" },
   {
     id: 9,
     name: "Wyndham Garden",
     price: 9000,
+    city: "Kokshetau",
   },
 ];
 
@@ -38,7 +43,12 @@ export const HotelsBody = () => {
   return (
     <div className={styles.destinations__body}>
       {myHotels.map((item) => (
-        <Hotel key={item.id} name={item.name} price={item.price} />
+        <Hotel
+          key={item.id}
+          name={item.name}
+          price={item.price}
+          city={item.city}
+        />
       ))}
     </div>
   );
