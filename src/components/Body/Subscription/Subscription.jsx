@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
 import styles from "./Subscription.module.css";
 
 export const Subscription = () => {
@@ -46,7 +45,7 @@ export const Subscription = () => {
       <div className={styles.subscription__text}>
         <p>
           Subscribe to get information, latest news and other interesting offers
-          about Jadoo
+          about Olzhas&Co
         </p>
         <form
           className={styles.subscription_text_form}

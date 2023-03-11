@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { LoginModal } from "./ModalWindows/LoginModal";
 import { SignupModal } from "./ModalWindows/SignupModal";
 import user from "../../assets/user.png";
@@ -41,7 +40,12 @@ export const Registration = () => {
         </div>
       )}
       {imgIsClicked && (
-        <p onClick={() => window.location.reload(false)} className={styles.refresh__exit}>Exit</p>
+        <p
+          onClick={() => window.location.reload(false)}
+          className={styles.refresh__exit}
+        >
+          Exit
+        </p>
       )}
     </div>
   );
