@@ -1,6 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import finalPrice from "../store/BookingsSlice";
+import { useSelector } from "react-redux";
 import ritz from "../assets/ritz.jpg";
 import airplane from "../assets/Airplane.png";
 import styles from "./Bookings.module.css";

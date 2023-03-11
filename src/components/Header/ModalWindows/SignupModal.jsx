@@ -71,7 +71,11 @@ export const SignupModal = (props) => {
               />
               <label id="checkbox">
                 I agree with{" "}
-                <a href="https://www.sports.ru/" target="_blank">
+                <a
+                  href="https://www.sports.ru/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   the Rules
                 </a>
               </label>
