@@ -167,7 +167,7 @@
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 480px) {
   .login__content,
   .signup__content {
     z-index: 2;
