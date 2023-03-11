@@ -9,6 +9,7 @@ export const LoginModal = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isComplete, setIsComplete] = useState(false);
+  const [error, setError] = useState();
 
   const dispatch = useDispatch();
 

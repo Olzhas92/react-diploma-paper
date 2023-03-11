@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addSubscription } from "../../../store/SubscriptionSlice";
 import styles from "./Subscription.module.css";
 
 export const Subscription = () => {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
 
-  const dispatch = useDispatch();
-
-  const submitHandler = (e) => {
+  const fetchSubscriptions = async (e) => {
     e.preventDefault();
     if (
       email.trim().toLocaleLowerCase().length > 0 &&
@@ -17,12 +15,31 @@ export const Subscription = () => {
       email.includes(".")
     ) {
       setIsComplete(true);
-      dispatch(addSubscription({ email: email }));
       setEmail("");
     } else {
       setIsComplete(false);
     }
+    setError(false);
+    try {
+      const response = await fetch(
+        "https://react-diploma-paper-default-rtdb.firebaseio.com/:subscriptions.json",
+        {
+          method: "POST",
+          body: JSON.stringify({ id: Math.random(), email }),
+        }
+      );
+      if (!response.ok) {
+        throw new Error("Something went wrong");
+      }
+      const data = await response.json();
+    } catch (error) {
+      setError(error.message);
+    }
   };
+
+  useEffect(() => {
+    fetchSubscriptions();
+  }, []);
 
   return (
     <div className={styles.subscription}>
@@ -33,7 +50,7 @@ export const Subscription = () => {
         </p>
         <form
           className={styles.subscription_text_form}
-          onSubmit={submitHandler}
+          onSubmit={fetchSubscriptions}
         >
           <input
             type="text"
