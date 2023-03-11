@@ -25,6 +25,7 @@ export const LoginModal = (props) => {
       setEmail("");
       setPassword("");
       props.closeLogin();
+      props.closeBurger();
     } else {
       setIsComplete(false);
     }

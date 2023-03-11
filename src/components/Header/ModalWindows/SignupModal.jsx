@@ -28,6 +28,7 @@ export const SignupModal = (props) => {
       setEmail("");
       setPassword("");
       props.closeSignup();
+      props.closeBurger();
     } else {
       setIsComplete(false);
     }

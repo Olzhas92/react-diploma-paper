@@ -60,12 +60,26 @@ export const Navbar = () => {
             >
               Signup
             </button>
+            {(loginIsClicked || signupIsClicked) && (
+              <button
+                className={styles.dropdown__exit}
+                onClick={() => window.location.reload(false)}
+              >
+                Exit
+              </button>
+            )}
           </div>
           {loginIsClicked && (
-            <LoginModal closeLogin={() => setLoginIsClicked(false)} />
+            <LoginModal
+              closeLogin={() => setLoginIsClicked(false)}
+              closeBurger={() => setBurgerIsClicked(false)}
+            />
           )}
           {signupIsClicked && (
-            <SignupModal closeSignup={() => setSignupIsClicked(false)} />
+            <SignupModal
+              closeSignup={() => setSignupIsClicked(false)}
+              closeBurger={() => setBurgerIsClicked(false)}
+            />
           )}
         </div>
       )}

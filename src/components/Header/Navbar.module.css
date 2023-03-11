@@ -168,7 +168,8 @@
   }
 
   .dropdown__login,
-  .dropdown__signup {
+  .dropdown__signup,
+  .dropdown__exit {
     border: none;
     background-color: white;
     text-decoration: none;
