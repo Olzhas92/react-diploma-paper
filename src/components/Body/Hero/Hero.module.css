@@ -264,4 +264,8 @@
     flex-direction: column;
     width: 100%;
   }
+
+  .hero_text_h2 {
+    margin-top: 20px;
+  }
 }
