@@ -68,9 +68,9 @@ export const HotelsBody = () => {
   };
 
   return (
-    <div className={styles.destinations__body}>
+    <div className={styles.hotels__body}>
       <h3>Please fill in this form and we'll search this hotel</h3>
-      <form onSubmit={submitHandler} className={styles.destinations_body_form}>
+      <form onSubmit={submitHandler} className={styles.hotels_body_form}>
         <input
           type="text"
           placeholder="Hotel"

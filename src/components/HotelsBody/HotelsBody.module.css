@@ -1,11 +1,11 @@
-.destinations__body {
+.hotels__body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.destinations__body h3 {
+.hotels__body h3 {
   border: none;
   font-family: "Volkhov";
   font-style: normal;
@@ -16,16 +16,17 @@
   text-transform: capitalize;
   color: lightcoral;
   font-variant: small-caps;
+  margin-top: 120px;
 }
 
-.destinations_body_form {
+.hotels_body_form {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.destinations_body_form input {
+.hotels_body_form input {
   padding: 12px;
   margin-bottom: 20px;
   border: none;
@@ -39,7 +40,7 @@
   color: lightcoral;
 }
 
-.destinations_body_form input::placeholder {
+.hotels_body_form input::placeholder {
   padding: 0;
   margin: 0;
   border: none;
@@ -53,7 +54,7 @@
   color: lightcoral;
 }
 
-.destinations_body_form button {
+.hotels_body_form button {
   padding: 12px;
   margin-bottom: 20px;
   border: none;
@@ -71,7 +72,7 @@
   border-radius: 20px;
 }
 
-.destinations__body h2 {
+.hotels__body h2 {
   font-family: "Volkhov";
   font-style: normal;
   font-weight: 700;
@@ -93,4 +94,14 @@
   text-transform: capitalize;
   color: lightcoral;
   margin-bottom: 60px;
+}
+
+@media (max-width: 360px) {
+  .hotels_body_form input {
+    width: 80%;
+  }
+
+  .hotels_body_form button {
+    width: 80%;
+  }
 }

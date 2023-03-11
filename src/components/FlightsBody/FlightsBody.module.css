@@ -16,6 +16,7 @@
   text-transform: capitalize;
   color: lightcoral;
   font-variant: small-caps;
+  margin-top: 120px;
 }
 
 .flights_body_form {
@@ -93,4 +94,14 @@
   text-transform: capitalize;
   color: lightcoral;
   margin-bottom: 60px;
+}
+
+@media (max-width: 360px) {
+  .flights_body_form input {
+    width: 80%;
+  }
+
+  .flights_body_form button {
+    width: 80%;
+  }
 }
