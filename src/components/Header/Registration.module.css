@@ -33,6 +33,27 @@
   cursor: pointer;
 }
 
+.refresh__exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* top: 52px;
+  right: 56px; */
+  top: 0;
+  right: 0;
+  font-family: "Volkhov";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: lightcoral;
+  border-radius: 12px;
+}
+
 @media (max-width: 1024px) {
   .registration {
     display: flex;

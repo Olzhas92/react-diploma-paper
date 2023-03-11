@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { LoginModal } from "./ModalWindows/LoginModal";
 import { SignupModal } from "./ModalWindows/SignupModal";
 import user from "../../assets/user.png";
@@ -8,12 +9,15 @@ import styles from "./Registration.module.css";
 export const Registration = () => {
   const [loginIsClicked, setLoginIsClicked] = useState(false);
   const [signupIsClicked, setSignupIsClicked] = useState(false);
-  const isLoggedIn = useSelector((state) => state.loginSlice.isLoggedIn);
-  const isSignedUp = useSelector((state) => state.signupSlice.isSignedUp);
+  const [imgIsClicked, setImgIsClicked] = useState(false);
+  let isLoggedIn = useSelector((state) => state.loginSlice.isLoggedIn);
+  let isSignedUp = useSelector((state) => state.signupSlice.isSignedUp);
 
   return (
     <div className={styles.registration}>
-      {(isLoggedIn || isSignedUp) && <img src={user} alt="user" />}
+      {(isLoggedIn || isSignedUp) && (
+        <img src={user} alt="user" onClick={() => setImgIsClicked(true)} />
+      )}
       {!isLoggedIn && !isSignedUp && (
         <div>
           <button
@@ -35,6 +39,9 @@ export const Registration = () => {
             <SignupModal closeSignup={() => setSignupIsClicked(false)} />
           )}
         </div>
+      )}
+      {imgIsClicked && (
+        <p onClick={() => window.location.reload(false)} className={styles.refresh__exit}>Exit</p>
       )}
     </div>
   );
