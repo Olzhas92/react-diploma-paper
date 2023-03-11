@@ -59,21 +59,23 @@ export const SignupModal = (props) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div className={styles.signup_form_checkbox}>
-            <input
-              type="checkbox"
-              id="checkbox"
-              onClick={() => {
-                setIsAgreed(!isAgreed);
-                console.log(isAgreed);
-              }}
-            />
-            <label id="checkbox">
-              I agree with{" "}
-              <a href="https://www.sports.ru/" target="_blank">
-                the Rules
-              </a>
-            </label>
+          <div className={styles.signup_checkbox_wrapper}>
+            <div className={styles.signup_form_checkbox}>
+              <input
+                type="checkbox"
+                id="checkbox"
+                onClick={() => {
+                  setIsAgreed(!isAgreed);
+                  console.log(isAgreed);
+                }}
+              />
+              <label id="checkbox">
+                I agree with{" "}
+                <a href="https://www.sports.ru/" target="_blank">
+                  the Rules
+                </a>
+              </label>
+            </div>
           </div>
           <button type="submit" className={styles.signup_form_button}>
             Sign Up
