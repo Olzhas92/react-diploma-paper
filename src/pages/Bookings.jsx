@@ -21,7 +21,7 @@ export const Bookings = () => {
         <div key={item.id} className={styles.bookings__hotels}>
           <img src={ritz} alt="ritz" />
           <p>Hotel: {item.hotel}</p>
-          <p>Price: $ {item.price}</p>
+          <p>Price: $ {parseInt(item.price)}</p>
           <p>City: {item.city}</p>
         </div>
       ))}
@@ -30,7 +30,7 @@ export const Bookings = () => {
       {flightsArr.map((item) => (
         <div key={item.id} className={styles.bookings__flights}>
           <img src={airplane} alt="airplane" />
-          <p>Price: $ {item.price}</p>
+          <p>Price: $ {parseInt(item.price)}</p>
           <p>City: {item.city}</p>
         </div>
       ))}

@@ -80,7 +80,7 @@ export const HotelsBody = () => {
         <input
           type="number"
           placeholder="Price"
-          value={newPrice}
+          value={Number(newPrice).toString()}
           onChange={(e) => setNewPrice(e.target.value)}
         />
         <input
