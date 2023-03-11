@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import ritz from "../assets/ritz.jpg";
 import airplane from "../assets/Airplane.png";

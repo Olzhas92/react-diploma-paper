@@ -9,11 +9,11 @@ export const Cookies = () => {
     localStorage.setItem("cookieBanner", "true");
   };
 
-  //   useEffect(() => {
-  //     if (localStorage.getItem("cookieBanner")) {
-  //       setIsVisible(false);
-  //     }
-  //   }, [isVisible]);
+  // useEffect(() => {
+  //   if (localStorage.getItem("cookieBanner")) {
+  //     setIsVisible(false);
+  //   }
+  // }, [isVisible]);
 
   return (
     <div>
