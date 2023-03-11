@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import { Registration } from "../Header/Registration";
 import burger from "../../assets/burger.svg";
 import styles from "./Navbar.module.css";
+import { LoginModal } from "./ModalWindows/LoginModal";
+import { SignupModal } from "./ModalWindows/SignupModal";
 
 export const Navbar = () => {
   const [burgerIsClicked, setBurgerIsClicked] = useState(false);
+  const [loginIsClicked, setLoginIsClicked] = useState(false);
+  const [signupIsClicked, setSignupIsClicked] = useState(false);
+
   return (
     <div className={styles.navbar}>
       <Link to="/" className={styles.navbar__logo}>
@@ -43,9 +48,25 @@ export const Navbar = () => {
             </Link>
           </nav>
           <div className={styles.dropdown__buttons}>
-            <button className={styles.dropdown__login}>Login</button>
-            <button className={styles.dropdown__signup}>Signup</button>
+            <button
+              className={styles.dropdown__login}
+              onClick={() => setLoginIsClicked(true)}
+            >
+              Login
+            </button>
+            <button
+              className={styles.dropdown__signup}
+              onClick={() => setSignupIsClicked(true)}
+            >
+              Signup
+            </button>
           </div>
+          {loginIsClicked && (
+            <LoginModal closeLogin={() => setLoginIsClicked(false)} />
+          )}
+          {signupIsClicked && (
+            <SignupModal closeSignup={() => setSignupIsClicked(false)} />
+          )}
         </div>
       )}
     </div>

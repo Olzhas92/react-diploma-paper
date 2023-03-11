@@ -5,6 +5,8 @@ const bookingsSlice = createSlice({
   initialState: {
     hotelsArr: [],
     flightsArr: [],
+    hotelsTotalPrice: 0,
+    flightsTotalPrice: 0,
     totalPrice: 0,
   },
   reducers: {
@@ -18,6 +20,11 @@ const bookingsSlice = createSlice({
       console.log(newHotelRequest);
       state.hotelsArr = [...state.hotelsArr, newHotelRequest];
       console.log(state.hotelsArr);
+      state.hotelsTotalPrice = state.hotelsArr.reduce(
+        (accumulator, currentValue) => accumulator + currentValue.price,
+        0
+      );
+      console.log(`hotelsTotalPrice is ${state.hotelsTotalPrice}`);
     },
     addFlight(state, action) {
       const newFlightRequest = {
@@ -28,10 +35,15 @@ const bookingsSlice = createSlice({
       console.log(newFlightRequest);
       state.flightsArr = [...state.flightsArr, newFlightRequest];
       console.log(state.flightsArr);
+      state.flightsTotalPrice = state.flightsArr.reduce(
+        (accumulator, currentValue) => accumulator + currentValue.price,
+        0
+      );
+      console.log(`flightsTotalPrice is ${state.flightsTotalPrice}`);
     },
   },
 });
 
-export const { addHotel, addFlight } = bookingsSlice.actions;
+export const { addHotel, addFlight, finalPrice } = bookingsSlice.actions;
 
 export default bookingsSlice.reducer;
